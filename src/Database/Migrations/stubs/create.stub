@@ -1,0 +1,15 @@
+<?php
+
+use CodeSmithTech\Genesis\Database\Migrations\DatabaseBlueprint;
+use CodeSmithTech\Genesis\Database\Migrations\DatabaseMigration;
+
+class DummyClass extends DatabaseMigration
+{
+    public function up()
+    {
+        $this->schema->create('DummyTable', function (DatabaseBlueprint $table) {
+
+            $this->standardiseTable($table);
+        });
+    }
+}

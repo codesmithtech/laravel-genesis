@@ -1,0 +1,25 @@
+{
+    "name": "codesmithtech/laravel-genesis",
+    "description": "Provides a set of low level components that can be used for improving the Laravel development experience. Should always be used from Lthe very beginning of a Laravel project",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Smith",
+            "email": "david@codesmith.tech"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CodeSmithTech\\Genesis\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodeSmithTech\\Genesis\\GenesisServiceProvider"
+            ]
+        }
+    }
+}
