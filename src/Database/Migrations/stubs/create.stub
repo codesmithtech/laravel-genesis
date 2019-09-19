@@ -8,7 +8,7 @@ class DummyClass extends DatabaseMigration
     public function up()
     {
         $this->schema->create('DummyTable', function (DatabaseBlueprint $table) {
-
+			// migration
             $this->standardiseTable($table);
         });
     }

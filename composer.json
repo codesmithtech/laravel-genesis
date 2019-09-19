@@ -21,5 +21,11 @@
                 "CodeSmithTech\\Genesis\\GenesisServiceProvider"
             ]
         }
+    },
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "../genesis"
+        }
     }
 }
