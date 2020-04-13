@@ -1,5 +1,4 @@
 <?php
-
 namespace CodeSmithTech\Genesis;
 
 use CodeSmithTech\Genesis\Database\Migrations\MigrateMakeCommand;
