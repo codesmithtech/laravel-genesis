@@ -10,11 +10,9 @@ class GenesisServiceProvider extends ServiceProvider
     public function boot()
     {
         // register our custom CLI commands
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                MigrateMakeCommand::class,
-            ]);
-        }
+        $this->commands([
+            MigrateMakeCommand::class,
+        ]);
     }
     
     public function register()
