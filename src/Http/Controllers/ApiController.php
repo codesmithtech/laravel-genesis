@@ -1,5 +1,4 @@
 <?php
-
 namespace CodeSmithTech\Genesis\Http\Controllers;
 
 use Illuminate\Routing\Controller;
@@ -21,6 +20,21 @@ class ApiController extends Controller
     }
     
     public function error($data, $status = 500)
+    {
+        return response()->json($data, $status);
+    }
+    
+    public function created($data, $status = 201)
+    {
+        return response()->json($data, $status);
+    }
+    
+    public function modified($data, $status = 202)
+    {
+        return response()->json($data, $status);
+    }
+    
+    public function removed($data, $status = 202)
     {
         return response()->json($data, $status);
     }
