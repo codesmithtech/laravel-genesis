@@ -10,7 +10,7 @@ class ApiController extends Controller
         return response()->json($data);
     }
     
-    public function validationError($fieldName, $message, $status = 400)
+    public function validationError($fieldName, $message, $status = 422)
     {
         return response([
             'errors' => [
