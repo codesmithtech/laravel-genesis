@@ -15,9 +15,9 @@ class DatabaseMigration extends Migration
      */
     protected $schema;
     
-    public function __construct()
+    public function __construct($databaseConnection = 'mysql')
     {
-        $this->schema = Schema::connection('mysql');
+        $this->schema = Schema::connection($databaseConnection);
         $this->schema->blueprintResolver(function($table, $callback) {
             return new DatabaseBlueprint($table, $callback);
         });
