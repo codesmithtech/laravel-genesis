@@ -5,7 +5,7 @@ use Illuminate\Routing\Controller;
 
 class ApiController extends Controller
 {
-    public function ok($data)
+    public function ok($data = '')
     {
         return response()->json($data);
     }
@@ -19,22 +19,22 @@ class ApiController extends Controller
         ], $status);
     }
     
-    public function error($data, $status = 500)
+    public function error($data = '', $status = 500)
     {
         return response()->json($data, $status);
     }
     
-    public function created($data, $status = 201)
+    public function created($data = '', $status = 201)
     {
         return response()->json($data, $status);
     }
     
-    public function modified($data, $status = 202)
+    public function modified($data = '', $status = 202)
     {
         return response()->json($data, $status);
     }
     
-    public function removed($data, $status = 202)
+    public function removed($data = '', $status = 202)
     {
         return response()->json($data, $status);
     }
