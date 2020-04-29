@@ -18,6 +18,8 @@ abstract class EntityModel extends Model
     const UPDATED_AT = 'updatedAt';
     const DELETED_AT = 'deletedAt';
     
+    public static $snakeAttributes = false;
+    
     /**
      * @var array
      */
