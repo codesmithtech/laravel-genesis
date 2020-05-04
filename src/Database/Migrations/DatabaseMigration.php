@@ -1,5 +1,4 @@
 <?php
-
 namespace CodeSmithTech\Genesis\Database\Migrations;
 
 use CodeSmithTech\Genesis\Entity\EntityModel;
