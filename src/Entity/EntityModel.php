@@ -37,4 +37,14 @@ abstract class EntityModel extends Model
     {
         return DB::raw('NOW()');
     }
+    
+    /**
+     * @param callable $cb
+     * @param int $attempts
+     * @return mixed
+     */
+    public function transaction(callable $cb, $attempts = 1)
+    {
+        return DB::transaction($cb, $attempts);
+    }
 }
