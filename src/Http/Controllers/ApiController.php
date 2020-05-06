@@ -45,6 +45,11 @@ class ApiController extends Controller
         return response()->json($data, $status);
     }
     
+    public function expired($data = '', $status = 410)
+    {
+        return response()->json($data, $status);
+    }
+    
     public function __get($name)
     {
         if ($name === 'user') {
